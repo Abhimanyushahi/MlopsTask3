@@ -7,7 +7,7 @@
 import keras
 from keras.datasets import mnist
 from keras.layers import Dense
-from keras.models import sequential
+from keras.models import Sequential
 from keras.optimizers import SGD
 import matplotlib.pyplot as plt
 from keras.preprocessing import image 
