@@ -41,7 +41,7 @@ while accuracy < .90 :
         model.add(Dense(units=128,activation="relu",input_shape=(784,)))
     
     count = count +1
-    print("count is ", counter)
+    print("count is ", count)
     model.add(Dense(units=10, activation="softmax"))
     learning_rate = learnig_rate/10
     print("learning rate is :", learning_rate)
