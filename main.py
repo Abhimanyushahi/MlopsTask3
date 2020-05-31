@@ -43,7 +43,7 @@ while accuracy < .90 :
     count = count +1
     print("count is ", count)
     model.add(Dense(units=10, activation="softmax"))
-    learning_rate = learnig_rate/10
+    learning_rate = learning_rate/10
     print("learning rate is :", learning_rate)
     model.compile(optimizer=SGD(learning_rate),loss="categorical_crossentropy",metrics=["accuracy"])
     model.fit(x_train,y_train,batch_size=32,epochs=epoch,verbose=1)
